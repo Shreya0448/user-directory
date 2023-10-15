@@ -1,0 +1,229 @@
+/* UserList.css */
+.user-list-container {
+    display: flex;
+    align-items: center;
+    width: 70%;
+    margin: 80px auto;
+    padding: 20px;
+}
+
+.directory-card {
+    margin: 30px;
+}
+
+.directory-heading {
+    display: flex;
+    justify-content: center;
+    margin: 30px auto !important;
+    font-weight: 600 !important;
+}
+
+
+/* UserCard.css */
+.user-card {
+    border-radius: 10px !important;
+    background: #C2DFFF !important;
+    border: 3px solid lightgrey !important;
+    transition: all 0.3s !important;
+    font-size: 1rem !important;
+}
+
+.left-alignment {
+    text-align: left;
+}
+
+.right-alignment {
+    text-align: right;
+}
+
+
+.center-alignment {
+    text-align: center;
+}
+
+.bold-label {
+    font-weight: 600 !important;
+}
+
+/* user details */
+
+.user-details-container {
+    display: flex;
+    align-items: center;
+    width: 70%;
+    margin: 80px auto;
+    padding: 20px;
+}
+
+.user-details-card {
+    width: 100%;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    margin: 30px 0;
+}
+
+.back-link {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    height: 25px;
+    border-radius: 5px;
+    border: 1px solid black;
+    width: 50px;
+    background: lightblue;
+}
+
+.back-link-text {
+    color: black;
+    margin: auto;
+}
+
+.select-container {
+    width: 300px;
+}
+
+
+/* Add responsive styles for smaller screens */
+@media (max-width: 768px) {
+
+    .user-card {
+        border-width: 2px;
+        background: #E0E0E0;
+        padding: 10px;
+        font-size: 0.8rem;
+    }
+
+    .user-details-container {
+        width: 90%;
+    }
+
+    .back-link {
+        margin-bottom: 10px;
+    }
+
+    .userList {
+        font-size: 18px !important;
+    }
+
+    .user-list-container {
+        width: 90%;
+    }
+
+    .directory-card {
+        margin: 10px;
+    }
+
+    .select-container {
+        width: 170px;
+        font-size: 18px !important;
+    }
+}
+
+
+.timerText {
+    margin-top: 20px !important;
+    color: red
+}
+
+.mobileViewEnable {
+    display: none;
+}
+
+@media (max-width: 1024px) {
+    .mobileViewDisable {
+        display: none;
+    }
+
+    .mobileViewEnable {
+        display: flex;
+        align-items: center;
+        margin: 20px auto;
+        justify-content: space-between;
+    }
+}
+
+
+/* Profile page */
+.profile-card {
+    border-radius: 10px;
+    border: 3px solid lightgrey;
+    margin-bottom: 50px;
+  }
+  
+  .profile-card-content {
+    padding: 10px 20px;
+  }
+  
+  .profile-details {
+    text-align: left;
+  }
+  
+  .post-card {
+    height: 200px;
+    padding: 10px;
+  }
+  
+  .post-title {
+    text-align: center;
+    margin-bottom: 15px;
+    font-size: "22px";
+    max-height: 2 * 1.2em; 
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+  }
+  
+
+  @media (max-width: 600px) {
+    .profile-card-content {
+        padding: 10px;
+      }
+      
+}
+
+.post-body {
+    max-height: 4 * 1.2em; /* Four lines with 1.2em line height */
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 4; /* Number of lines to display */
+    -webkit-box-orient: vertical;
+  }
+
+
+  /*Dialog*/
+  .post-popup {
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+  }
+  
+  .post-content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    max-width: 400px;
+    width: 100%;
+    position: relative;
+  }
+  
+  .close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    font-size: 20px;
+  }
+  
